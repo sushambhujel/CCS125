@@ -9,19 +9,19 @@
 
 public class SavingsAccount
 {
-   private double Balance;
-   public void SavingsAccount(double Bal)
+   private double balance;
+   public SavingsAccount(double Bal)
    {
-       Balance = Bal;
+       balance = Bal;
        
     }
    public void addInterest(double Int)
    {
-       Balance= Balance+(Balance*Int);
+       balance= balance+(balance*Int);
     }
    public double getBalance()
    {
-       return Balance;
+       return balance;
     }
    
 }

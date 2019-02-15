@@ -18,6 +18,7 @@ public class SavingsAccountTester
            eachCol.useDelimiter(",");
            while(eachCol.hasNextDouble())
            {
+            
                SavingsAccount mySavings = new SavingsAccount(eachCol.nextDouble());
                mySavings.addInterest(eachCol.nextDouble());
                System.out.println("My savings balance with interest is" +mySavings.getBalance());
